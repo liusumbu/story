@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Buku Interaktif Yulius</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+</head>
+<body>
+    <div class="book" id="book">
+        <div class="page" id="page1">
+            <h1 class="animated-text">Yulius</h1>
+            <img src="Lius.jpg" alt="Foto Yulius" class="profile-photo bounce-animation">
+            <p class="animated-text">Klik tombol di bawah untuk mulai.</p>
+            <button class="nav-button" onclick="nextPage()">Mulai</button>
+        </div>
+        <div class="page" id="page2">
+            <h2 class="animated-text">Tentang Saya</h2>
+            <img src="y.jpg" alt="Tentang Saya" class="page-image">
+            <p class="animated-text walk-in">Hallo Saya Lius, seorang mahasiswa yang sedang belajar. dan saya berkuliah di Universitas Sains dan teknologi komputer (STEKOM).</p>
+            <button class="nav-button" onclick="prevPage()">Kembali</button>
+            <button class="nav-button" onclick="nextPage()">Selanjutnya</button>
+        </div>
+        <div class="page" id="page3">
+            <h2 class="animated-text">Hobi Saya</h2>
+            <img src="m.jpg" alt="Hobi" class="page-image">
+            <p class="animated-text walk-in">Saya suka bermain sepak bola, coding, dan mendengarkan musik.</p>
+            <button class="nav-button" onclick="prevPage()">Kembali</button>
+            <button class="nav-button" onclick="nextPage()">Selanjutnya</button>
+        </div>
+        <div class="page" id="page4">
+            <h2 class="animated-text">Kesukaan Saya</h2>
+            <img src="L.jpg" alt="Kesukaan" class="page-image">
+            <p class="animated-text walk-in">Saya sukanya ngoding karena proses dalam menciptakan aplikasi atau website yang berguna memberi saya kepuasan tersendiri.</p>
+            <button class="nav-button" onclick="prevPage()">Kembali</button>
+            <button class="nav-button" onclick="nextPage()">Selanjutnya</button>
+        </div>
+        <div class="page" id="page5">
+            <h2 class="animated-text">Skil Saya</h2>
+            <img src="i.jpg" alt="Skil" class="page-image">
+            <p class="animated-text walk-in">Saya memiliki keterampilan dalam HTML, CSS, dan JavaScript.</p>
+            <button class="nav-button" onclick="prevPage()">Kembali</button>
+            <button class="nav-button" onclick="nextPage()">Selanjutnya</button>
+        </div>
+        <div class="page" id="page6">
+            <h2 class="animated-text">Media Sosial</h2>
+            <p class="animated-text walk-in">Follow to Instagram: 
+                <a href="https://www.instagram.com/lius_retang/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </p>
+            <p class="animated-text walk-in">Follow to Facebook: 
+                <a href="https://www.facebook.com/profile.php?id=100079618269656&locale=id_ID" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </p>
+            <button class="nav-button" onclick="prevPage()">Kembali</button>
+            <!-- Tambahkan elemen visual tambahan -->
+            <div class="extra-elements">
+                <img src="j.jpg" alt="Elemen Tambahan" class="extra-image">
+                <p class="extra-text">Terimakasih sudah kunjungi web ini🤩</p>
+            </div>
+        </div>        
+    </div>
+    <audio id="background-audio" src="l.mp3" autoplay loop controls></audio>
+    <script src="script.js"></script>
+</body>
+</html>
